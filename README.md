@@ -32,5 +32,7 @@ Can´t start protractor, for firefox browser, due a error "Could not find update
 The fix, run this command:
      `node node_modules\protractor\bin\webdriver-manager update`
      
+Now the command `ng test` does work and runs the tests described in the spec files.
+
      
 
