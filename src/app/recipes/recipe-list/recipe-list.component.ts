@@ -8,7 +8,9 @@ import {Recipe} from '../recipe.model';
 })
 export class RecipeListComponent implements OnInit {
   recipes: Recipe[] = [
-    new Recipe('A Test', 'testing', 'sample url')
+    new Recipe('A Test', 'testing', 'https://www.foodiesfeed.com/free-food-photo/crispy-chicken-on-a-fork-detail/')
+    , new Recipe('Second', 'second test recipe', 'sample url')
+    , new Recipe('third recipe', 'pie', 'looks good')
   ];
 
   constructor() { }
