@@ -5,7 +5,7 @@ Like the title says, this page will list the problems I have encountered and how
 
 ### Running Karma Tests
 
-## There are unknown elements in the main page of the application.
+#### There are unknown elements in the main page of the application.
 
 After running `ng test` on the command line, I saw these errors in the broqwser window:
 
@@ -62,3 +62,9 @@ describe('AppComponent', () => {
       ],
     }).compileComponents();
   }));`
+
+#### Using IntelliJ to run Karma tests
+I can run Karma tests using the command line through a terminal. Not can I run them using the Intellij IDE?
+
+Look at this resource for details: https://www.jetbrains.com/help/idea/running-unit-tests-on-karma.html
+
