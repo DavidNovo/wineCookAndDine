@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter} from '@angular/core';
+import {Component, EventEmitter, Output} from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,11 +7,10 @@ import { Component, Output, EventEmitter} from '@angular/core';
 export class HeaderComponent {
   // Which component to show?
   // send the answer out as output
-  @Output() recipes: EventEmitter<boolean> = new EventEmitter<boolean>();
+  @Output() featureSelected = new EventEmitter<string>();
 
 
-
-  showRecipes() {
-    this.recipes.emit(true);
+  onSelect(feature: string) {
+    this.featureSelected.emit(feature);
   }
 }
